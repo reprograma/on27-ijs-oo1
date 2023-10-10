@@ -3,7 +3,7 @@ import { Personagem } from "./Personagem.js";
 export class Confronto {
   lutar(superHeroi, vilao) {
     if (!(superHeroi instanceof Personagem))
-      return console.log("O vilão é inválido!");
+      return console.log("O super-herói é inválido!");
 
     if (!(vilao instanceof Personagem))
       return console.log("O vilão é inválido!");
