@@ -3,18 +3,12 @@ export class Confronto{
         const poderHeroi = heroi.poderTotal();
         const poderVilao = vilao.poderTotal();
 
-        if(poderHeroi > poderVilao){
+        if(poderHeroi > poderVilao)
             console.log(`${heroi.nome} derrotou ${vilao.nome}`);
-        }
-        else{
-            if(poderVilao > poderHeroi){
+        else if(poderVilao > poderHeroi)
                 console.log(`${vilao.nome} derrotou ${heroi.nome}`);
-            }
-            else{
-                console.log('Empatou')
-            }
-            
-        }
-       
+        else
+                console.log('Empatou');
+    
     }
 }
