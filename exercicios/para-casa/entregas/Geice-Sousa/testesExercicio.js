@@ -325,6 +325,7 @@ mulherMaravilhaXsuperHomem.lutar();
 const fenixNegraXfeiticeiraEscarlate = new Confronto(fenixNegra, feiticeiraEscarlate);
 fenixNegraXfeiticeiraEscarlate.lutar();
 
+// confrontos originais
 const superHomemXbizarro = new Confronto(superHomem, bizarro)
 const capitaoAmericaXlexLutor = new Confronto(capitaoAmerica, lexLutor)
 const flashXoctopus = new Confronto(flash, octopus)
