@@ -48,15 +48,18 @@ class Character {
   }
 
   addSuperPower(power) {
+    if(this.#powers.includes(power)) console.log(
+      `O poder ${power} já existe na lista.`);
+      
     if (this.#powers.length <= 3) {
       // verificar se o poder já está incluso usar includes
       return this.#powers.push({
         poder: power.getName,
-        categoria: power.getCategory,
+        categoria: power.getCategory
       });
     } else {
       console.log(
-        "Não é possível inserir mais nenhum poder para este this.personagem, ele já possui 4."
+        `Não é possível inserir mais nenhum poder para ${this.#name}, pois já possui 4.`
       );
     }
   }
@@ -91,16 +94,32 @@ class Confronto {
       return 0;
     }
     if (this.personagem1.powerTotal() >= this.personagem2.powerTotal()) {
-      console.log(`${this.personagem1}, o herói, venceu`);
+      console.log(`${this.personagem1.getNameHero} venceu.`);
       return 1;
     }
     if (this.personagem1.powerTotal() <= this.personagem2.powerTotal()) {
-      console.log(`${this.personagem2}, o vilão, venceu.`);
+      console.log(`${this.personagem2.getNameHero} venceu.`);
       return 2;
     }
     return;
   }
 }
 
+const homemAranha = new Character("Homem-Aranha", "Peter Park");
+const poderAranha1 = new SuperPower("soltar teia", 3);
+const poderAranha2 = new SuperPower("andar em paredes", 2);
+const poderAranha3 = new SuperPower("sentido apurado", 1);
+homemAranha.addSuperPower(poderAranha1);
+homemAranha.addSuperPower(poderAranha2);
+homemAranha.addSuperPower(poderAranha3);
+
+const octopus = new Character("Octopus", "Otto Octavius");
+const octopusPoder1 = new SuperPower("tentáculos indestrutíveis ", 5);
+const octopusPoder2 = new SuperPower("velocidade", 1);
+octopus.addSuperPower(octopusPoder1);
+octopus.addSuperPower(octopusPoder2);
+
+console.log(`O ${homemAranha.getNameHero} se chama ${homemAranha.getNameReal}. Seus poderes são:${homemAranha.getPowers}.`);
+console.log(homemAranha.getPowers);
+
 export { SuperPower, Character, Confronto}
-// dar npm init para usar export
