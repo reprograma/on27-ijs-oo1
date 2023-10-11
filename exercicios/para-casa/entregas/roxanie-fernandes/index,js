@@ -1,0 +1,133 @@
+const { SuperPoder } = require("./SuperPoder");
+const { Personagem } = require("./Personagem");
+const { Confronto } = require("./Confronto");
+//-------------------------------------------------------------------------------------------
+//Homem-aranha (1)
+const heroi1 = new Personagem("Homem-Aranha", "Peter Park");
+
+const superPoder1 = new SuperPoder("Soltar Teia", 3);
+const superPoder2 = new SuperPoder("Andar em Paredes", 2);
+const superPoder3 = new SuperPoder("Sentido Apurado", 1);
+
+heroi1.adicionaSuperPoder(superPoder1);
+heroi1.adicionaSuperPoder(superPoder2);
+heroi1.adicionaSuperPoder(superPoder3);
+// heroi1.adicionaSuperPoder(superPoder3)
+// heroi1.adicionaSuperPoder(superPoder5)
+
+heroi1.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Super-Homem (2)
+const heroi2 = new Personagem("Super-Homem", "Clark Kent");
+
+const superPoder4 = new SuperPoder("Voar", 3);
+const superPoder5 = new SuperPoder("Força", 5);
+const superPoder6 = new SuperPoder("Visão de Raio-X", 4);
+const superPoder7 = new SuperPoder("Sopro Congelante", 4);
+
+heroi2.adicionaSuperPoder(superPoder4);
+heroi2.adicionaSuperPoder(superPoder5);
+heroi2.adicionaSuperPoder(superPoder6);
+heroi2.adicionaSuperPoder(superPoder7);
+
+heroi2.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Capitão América (3)
+const heroi3 = new Personagem("Capitão América", "Steven Rogers");
+
+const superPoder8 = new SuperPoder("Supersoldado", 3);
+const superPoder9 = new SuperPoder("Escudo", 3);
+
+heroi3.adicionaSuperPoder(superPoder8);
+heroi3.adicionaSuperPoder(superPoder9);
+
+heroi3.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Flash (4)
+const heroi4 = new Personagem("Flash", "Barry Allen");
+
+const superPoder10 = new SuperPoder("Velocidade", 5);
+
+heroi4.adicionaSuperPoder(superPoder10);
+
+heroi4.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Homem de Ferro (5)
+const heroi5 = new Personagem("Homem de Ferro", "Tony Stark");
+
+const superPoder11 = new SuperPoder("Armadura", 4);
+const superPoder12 = new SuperPoder("Dispositivos Eletrônicos", 2);
+
+heroi5.adicionaSuperPoder(superPoder11);
+heroi5.adicionaSuperPoder(superPoder12);
+
+heroi5.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Mulher Maravilha (6)
+const heroi6 = new Personagem("Mulher Maravilha", "Diana");
+
+const superPoder13 = new SuperPoder("Velocidade", 3);
+const superPoder14 = new SuperPoder("Força", 3);
+const superPoder15 = new SuperPoder("Braceletes", 1);
+
+heroi6.adicionaSuperPoder(superPoder13);
+heroi6.adicionaSuperPoder(superPoder14);
+heroi6.adicionaSuperPoder(superPoder15);
+
+heroi6.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Duende Verde (1)
+const vilao1 = new Personagem("Duende-Verde", "Norman Osbourne");
+
+const superPoder16 = new SuperPoder("Força", 5);
+vilao1.adicionaSuperPoder(superPoder16);
+
+vilao1.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Lex Luthor (2)
+const vilao2 = new Personagem("Lex Luthor", "Lex Luthor");
+
+const superPoder17 = new SuperPoder("Mente Aguçada", 5);
+vilao2.adicionaSuperPoder(superPoder17);
+
+vilao2.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Bizarro (3)
+const vilao3 = new Personagem("Bizarro", "Bizarro");
+
+const superPoder18 = new SuperPoder("Voar", 3);
+const superPoder19 = new SuperPoder("Força", 5);
+const superPoder20 = new SuperPoder("Visão de Raio-X", 4);
+const superPoder21 = new SuperPoder("Sopro Congelante", 4);
+
+vilao3.adicionaSuperPoder(superPoder18);
+vilao3.adicionaSuperPoder(superPoder19);
+vilao3.adicionaSuperPoder(superPoder20);
+vilao3.adicionaSuperPoder(superPoder21);
+
+vilao3.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+//Octopus (4)
+const vilao4 = new Personagem("Octopus", "Octopus");
+
+const superPoder22 = new SuperPoder("Tentáculos indestrutíveis", 5);
+const superPoder23 = new SuperPoder("velocidade", 1);
+vilao4.adicionaSuperPoder(superPoder22);
+vilao4.adicionaSuperPoder(superPoder23);
+
+vilao4.poderTotal();
+
+//-------------------------------------------------------------------------------------------
+
+const confronto = new Confronto();
+
+const luta1 = confronto.lutar(heroi1, vilao3);
