@@ -48,16 +48,21 @@ class Character {
   }
 
   addSuperPower(power) {
-    if(this.#powers.includes(power)) console.log(
-      `O poder ${power} já existe na lista.`);
+    if((this.#powers.find(powerIncludes => powerIncludes.poder === power.getName))) {
+      console.log(
+      `O poder "${power.getName}" já existe na lista.`);
+      return
+    }
       
-    if (this.#powers.length <= 3) {
+    if (this.#powers.length < 4) {
       // verificar se o poder já está incluso usar includes
       return this.#powers.push({
         poder: power.getName,
         categoria: power.getCategory
       });
-    } else {
+    } 
+    
+    else {
       console.log(
         `Não é possível inserir mais nenhum poder para ${this.#name}, pois já possui 4.`
       );
@@ -119,7 +124,10 @@ const octopusPoder2 = new SuperPower("velocidade", 1);
 octopus.addSuperPower(octopusPoder1);
 octopus.addSuperPower(octopusPoder2);
 
-console.log(`O ${homemAranha.getNameHero} se chama ${homemAranha.getNameReal}. Seus poderes são:${homemAranha.getPowers}.`);
+console.log(`O ${homemAranha.getNameHero} se chama ${homemAranha.getNameReal}. Seus poderes são:${homemAranha.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`)
+
+
+
 console.log(homemAranha.getPowers);
 
 export { SuperPower, Character, Confronto}

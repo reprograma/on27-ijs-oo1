@@ -8,7 +8,7 @@ homemAranha.addSuperPower(poderAranha1);
 homemAranha.addSuperPower(poderAranha2);
 homemAranha.addSuperPower(poderAranha3);
 
-console.log(`${homemAranha.getNameHero} se chama ${homemAranha.getNameReal}. Seus poderes são:${homemAranha.getPowers}.`);
+console.log(`${homemAranha.getNameHero} se chama ${homemAranha.getNameReal}. Seus poderes são:${homemAranha.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${poderAranha1.getName} - Categoria: ${poderAranha1.getCategory}
 Poder: ${poderAranha2.getName} - Categoria: ${poderAranha2.getCategory}
@@ -26,7 +26,7 @@ superHomem.addSuperPower(superHomemPoder2);
 superHomem.addSuperPower(superHomemPoder3);
 superHomem.addSuperPower(superHomemPoder4);
 
-console.log(`${superHomem.getNameHero} se chama ${superHomem.getNameReal}. Seus poderes são:${superHomem.getPowers}.`);
+console.log(`${superHomem.getNameHero} se chama ${superHomem.getNameReal}. Seus poderes são:${superHomem.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${superHomemPoder1.getName} - Categoria: ${superHomemPoder1.getCategory}`);
 console.log(`Poder: ${superHomemPoder2.getName} - Categoria: ${superHomemPoder2.getCategory}`);
@@ -41,7 +41,7 @@ const capitaoAmericaPoder2 = new SuperPower('escudo', 3);
 capitaoAmerica.addSuperPower(capitaoAmericaPoder1);
 capitaoAmerica.addSuperPower(capitaoAmericaPoder2);
 
-console.log(`${capitaoAmerica.getNameHero} se chama ${capitaoAmerica.getNameReal}. Seus poderes são:${capitaoAmerica.getPowers}.`);
+console.log(`${capitaoAmerica.getNameHero} se chama ${capitaoAmerica.getNameReal}. Seus poderes são:${capitaoAmerica.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${capitaoAmericaPoder1.getName} - Categoria: ${capitaoAmericaPoder1.getCategory}`);
 console.log(`Poder: ${capitaoAmericaPoder2.getName} - Categoria: ${capitaoAmericaPoder2.getCategory}`);
@@ -52,7 +52,7 @@ const flash = new Character('Flash', 'Barry Allen');
 const flashPoder = new SuperPower('velocidade', 5);
 flash.addSuperPower(flashPoder);
 
-console.log(`${flash.getNameHero} se chama ${flash.getNameReal}. Seus poderes são:${flash.getPowers}.`);
+console.log(`${flash.getNameHero} se chama ${flash.getNameReal}. Seus poderes são:${flash.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${flashPoder.getName} - Categoria: ${flashPoder.getCategory}`);
 console.groupEnd();
@@ -64,7 +64,7 @@ const homemDeFerroPoder2 = new SuperPower('dispositivos eletrônicos', 2);
 homemDeFerro.addSuperPower(homemDeFerroPoder1);
 homemDeFerro.addSuperPower(homemDeFerroPoder2);
 
-console.log(`${homemDeFerro.getNameHero} se chama ${homemDeFerro.getNameReal}. Seus poderes são:${homemDeFerro.getPowers}.`);
+console.log(`${homemDeFerro.getNameHero} se chama ${homemDeFerro.getNameReal}. Seus poderes são:${homemDeFerro.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${homemDeFerroPoder1.getName} - Categoria: ${homemDeFerroPoder1.getCategory}`);
 console.log(`Poder: ${homemDeFerroPoder2.getName} - Categoria: ${homemDeFerroPoder2.getCategory}`);
@@ -79,7 +79,7 @@ mulherMaravilha.addSuperPower(mulherMaravilhaPoder1);
 mulherMaravilha.addSuperPower(mulherMaravilhaPoder2);
 mulherMaravilha.addSuperPower(mulherMaravilhaPoder3);
 
-console.log(`${mulherMaravilha.getNameHero} se chama ${mulherMaravilha.getNameReal}. Seus poderes são:${mulherMaravilha.getPowers}.`);
+console.log(`${mulherMaravilha.getNameHero} se chama ${mulherMaravilha.getNameReal}. Seus poderes são:${mulherMaravilha.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${mulherMaravilhaPoder1.getName} - Categoria: ${mulherMaravilhaPoder1.getCategory}
 Poder: ${mulherMaravilhaPoder2.getName} - Categoria: ${mulherMaravilhaPoder2.getCategory}
@@ -101,7 +101,7 @@ const lexLutor = new Character('Lex Luthor', 'Lex Luthor');
 const lexLutorPoder = new SuperPower('mente aguçada', 5);
 lexLutor.addSuperPower(lexLutorPoder);
 
-console.log(`${lexLutor.getNameHero} se chama ${lexLutor.getNameReal}. Seus poderes são:${lexLutor.getPowers}.`);
+console.log(`${lexLutor.getNameHero} se chama ${lexLutor.getNameReal}. Seus poderes são:${lexLutor.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${lexLutorPoder.getName} - Categoria: ${lexLutorPoder.getCategory}`);
 console.groupEnd();
@@ -117,7 +117,7 @@ bizarro.addSuperPower(bizarroPoder2);
 bizarro.addSuperPower(bizarroPoder3);
 bizarro.addSuperPower(bizarroPoder4);
 
-console.log(`${bizarro.getNameHero} se chama ${bizarro.getNameReal}. Seus poderes são:${bizarro.getPowers}.`);
+console.log(`${bizarro.getNameHero} se chama ${bizarro.getNameReal}. Seus poderes são:${bizarro.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${bizarroPoder1.getName} - Categoria: ${bizarroPoder1.getCategory}
 Poder: ${bizarroPoder2.getName} - Categoria: ${bizarroPoder2.getCategory}
@@ -132,7 +132,7 @@ const octopusPoder2 = new SuperPower('velocidade', 1);
 octopus.addSuperPower(octopusPoder1);
 octopus.addSuperPower(octopusPoder2);
 
-console.log(`${octopus.getNameHero} se chama ${octopus.getNameReal}. Seus poderes são:${octopus.getPowers}.`);
+console.log(`${octopus.getNameHero} se chama ${octopus.getNameReal}. Seus poderes são:${octopus.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${octopusPoder1.getName} - Categoria: ${octopusPoder1.getCategory}
 Poder: ${octopusPoder2.getName} - Categoria: ${octopusPoder2.getCategory}`);
@@ -147,7 +147,7 @@ feiticeiraEscarlate.addSuperPower(feiticeiraEscarlatePoder1);
 feiticeiraEscarlate.addSuperPower(feiticeiraEscarlatePoder2);
 feiticeiraEscarlate.addSuperPower(feiticeiraEscarlatePoder3);
 
-console.log(`${feiticeiraEscarlate.getNameHero} se chama ${feiticeiraEscarlate.getNameReal}. Seus poderes são:${feiticeiraEscarlate.getPowers}.`);
+console.log(`${feiticeiraEscarlate.getNameHero} se chama ${feiticeiraEscarlate.getNameReal}. Seus poderes são:${feiticeiraEscarlate.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${feiticeiraEscarlatePoder1.getName} - Categoria: ${feiticeiraEscarlatePoder1.getCategory}
 Poder: ${feiticeiraEscarlatePoder2.getName} - Categoria: ${feiticeiraEscarlatePoder2.getCategory}
@@ -163,7 +163,7 @@ mulherHulk.addSuperPower(mulherHulkPoder1);
 mulherHulk.addSuperPower(mulherHulkPoder2);
 mulherHulk.addSuperPower(mulherHulkPoder3);
 
-console.log(`${mulherHulk.getNameHero} se chama ${mulherHulk.getNameReal}. Seus poderes são:${mulherHulk.getPowers}.`);
+console.log(`${mulherHulk.getNameHero} se chama ${mulherHulk.getNameReal}. Seus poderes são:${mulherHulk.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${mulherHulkPoder1.getName} - Categoria: ${mulherHulkPoder1.getCategory}
 Poder: ${mulherHulkPoder2.getName} - Categoria: ${mulherHulkPoder2.getCategory}`);
@@ -183,8 +183,10 @@ capitaMarvel.addSuperPower(capitaMarvelPoder3);
 capitaMarvel.addSuperPower(capitaMarvelPoder4);
 capitaMarvel.addSuperPower(capitaMarvelPoder5);
 capitaMarvel.addSuperPower(capitaMarvelPoder6);
+console.log()
 
-console.log(`${capitaMarvel.getNameHero} se chama ${capitaMarvel.getNameReal}. Seus poderes são:${capitaMarvel.getPowers}.`);
+
+console.log(`${capitaMarvel.getNameHero} se chama ${capitaMarvel.getNameReal}. Seus poderes são:${capitaMarvel.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${capitaMarvelPoder1.getName} - Categoria: ${capitaMarvelPoder1.getCategory}
 Poder: ${capitaMarvelPoder2.getName} - Categoria: ${capitaMarvelPoder2.getCategory}
@@ -205,7 +207,7 @@ viuvaNegra.addSuperPower(viuvaNegraPoder2);
 viuvaNegra.addSuperPower(viuvaNegraPoder3);
 viuvaNegra.addSuperPower(viuvaNegraPoder4);
 
-console.log(`${viuvaNegra.getNameHero} se chama ${viuvaNegra.getNameReal}. Seus poderes são:${viuvaNegra.getPowers}.`);
+console.log(`${viuvaNegra.getNameHero} se chama ${viuvaNegra.getNameReal}. Seus poderes são:${viuvaNegra.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${viuvaNegraPoder1.getName} - Categoria: ${viuvaNegraPoder1.getCategory}
 Poder: ${viuvaNegraPoder2.getName} - Categoria: ${viuvaNegraPoder2.getCategory}
@@ -220,7 +222,7 @@ const fenixNegraPoder2 = new SuperPower('telecinese', 4);
 fenixNegra.addSuperPower(fenixNegraPoder1);
 fenixNegra.addSuperPower(fenixNegraPoder2);
 
-console.log(`${fenixNegra.getNameHero} se chama ${fenixNegra.getNameReal}. Seus poderes são:${fenixNegra.getPowers}.`);
+console.log(`${fenixNegra.getNameHero} se chama ${fenixNegra.getNameReal}. Seus poderes são:${fenixNegra.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${fenixNegraPoder1.getName} - Categoria: ${fenixNegraPoder1.getCategory}
 Poder: ${fenixNegraPoder2.getName} - Categoria: ${fenixNegraPoder2.getCategory}`);
@@ -237,7 +239,7 @@ gamora.addSuperPower(gamoraPoder2);
 gamora.addSuperPower(gamoraPoder3);
 gamora.addSuperPower(gamoraPoder4);
 
-console.log(`${gamora.getNameHero} se chama ${gamora.getNameReal}. Seus poderes são:${gamora.getPowers}.`);
+console.log(`${gamora.getNameHero} se chama ${gamora.getNameReal}. Seus poderes são:${gamora.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${gamoraPoder1.getName} - Categoria: ${gamoraPoder1.getCategory}
 Poder: ${gamoraPoder2.getName} - Categoria: ${gamoraPoder2.getCategory}
@@ -252,7 +254,7 @@ const shuriPoder2 = new SuperPower('dispositivos eletrônicos', 2);
 shuri.addSuperPower(shuriPoder1);
 shuri.addSuperPower(shuriPoder2);
 
-console.log(`${shuri.getNameHero} se chama ${shuri.getNameReal}. Seus poderes são:${shuri.getPowers}.`);
+console.log(`${shuri.getNameHero} se chama ${shuri.getNameReal}. Seus poderes são:${shuri.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${shuriPoder1.getName} - Categoria: ${shuriPoder1.getCategory}
 Poder: ${shuriPoder2.getName} - Categoria: ${shuriPoder2.getCategory}`);
@@ -267,7 +269,7 @@ monicaRambeau.addSuperPower(monicaRambeauPoder1);
 monicaRambeau.addSuperPower(monicaRambeauPoder2);
 monicaRambeau.addSuperPower(monicaRambeauPoder3);
 
-console.log(`${monicaRambeau.getNameHero} se chama ${monicaRambeau.getNameReal}. Seus poderes são:${monicaRambeau.getPowers}.`);
+console.log(`${monicaRambeau.getNameHero} se chama ${monicaRambeau.getNameReal}. Seus poderes são:${monicaRambeau.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${monicaRambeauPoder1.getName} - Categoria: ${monicaRambeauPoder1.getCategory}
 Poder: ${monicaRambeauPoder2.getName} - Categoria: ${monicaRambeauPoder2.getCategory}
@@ -280,8 +282,11 @@ const valquiriaPoder1 = new SuperPower('força', 5);
 const valquiriaPoder2 = new SuperPower('alta habilidade de luta com espadas', 3);
 valquiria.addSuperPower(valquiriaPoder1);
 valquiria.addSuperPower(valquiriaPoder2);
+valquiria.addSuperPower(valquiriaPoder2);
+valquiria.addSuperPower(valquiriaPoder1);
 
-console.log(`${valquiria.getNameHero} se chama ${valquiria.getNameReal}. Seus poderes são:${valquiria.getPowers}.`);
+console.log()
+console.log(`${valquiria.getNameHero} se chama ${valquiria.getNameReal}. Seus poderes são:${valquiria.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${valquiriaPoder1.getName} - Categoria: ${valquiriaPoder1.getCategory}
 Poder: ${valquiriaPoder2.getName} - Categoria: ${valquiriaPoder2.getCategory}`);
@@ -291,8 +296,9 @@ console.log();
 const tempestade = new Character('Tempestade', 'Ororo Munroe');
 const tempestadePoder = new SuperPower('manipula o clima', 4);
 tempestade.addSuperPower(tempestadePoder);
+tempestade.addSuperPower(tempestadePoder);
 
-console.log(`${tempestade.getNameHero} se chama ${tempestade.getNameReal}. Seus poderes são:${tempestade.getPowers}.`);
+console.log(`${tempestade.getNameHero} se chama ${tempestade.getNameReal}. Seus poderes são:${tempestade.getPowers.map((eachPower)=> ` "${eachPower.poder}"`)}.`);
 console.group()
 console.log(`Poder: ${tempestadePoder.getName} - Categoria: ${tempestadePoder.getCategory}`);
 console.groupEnd();
