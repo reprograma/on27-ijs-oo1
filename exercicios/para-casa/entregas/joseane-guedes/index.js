@@ -14,7 +14,7 @@ const poderTotal = superheroi.poderTotal();
 console.log(`O poder total é ${poderTotal}`);
 
 
-console.log(`O nome do personagem é ${superheroi.nome} e na vida real ela se chama ${superheroi.nomeVidaReal} e tem o poder total ${superheroi.poderTotal()} `)
+console.log(`O nome do personagem é ${superheroi.nome} e na vida real se chama ${superheroi.nomeVidaReal} e tem o poder total ${superheroi.poderTotal()} `)
 
 console.log(`O poder é ${superPoder1.nome} e a categoria do poder é ${superPoder1.categoria}`);
 
