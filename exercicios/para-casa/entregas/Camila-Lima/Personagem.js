@@ -17,10 +17,6 @@ export class Personagem{
   }
   
    adicionaSuperPoder(SuperPoder) {
-    // if (!(superpoder instanceof SuperPoder)){
-    //   throw 
-    // }
-
     if (this.#poderes.length <= 4) {
       this.#poderes.push(SuperPoder);
       console.log(`${SuperPoder.nomePoder} foi adicionado`);
