@@ -12,6 +12,6 @@ personagem.adicionaSuperPoder(superPoder);
 personagem.adicionaSuperPoder(superPoder1);
 
 console.log(`${personagem.nome} tem um poder total de ${personagem.poderTotal()}`);
-// console.log(`${superman.nome} tem um poder total de ${superman.poderTotal()}`);
+
 
 
