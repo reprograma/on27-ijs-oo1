@@ -9,6 +9,10 @@ const superheroi = new Personagem('Mulher do Brasil', 'Maria');
 superheroi.adicionaSuperPoder(superPoder1);
 superheroi.poderTotal();
 
+const vilao = new Personagem('Mulher do Brasil', 'Maria');
+superheroi.adicionaSuperPoder(superPoder1);
+superheroi.poderTotal();
+
 const poderTotal = superheroi.poderTotal();
 
 console.log(`O poder total é ${poderTotal}`);
@@ -20,7 +24,6 @@ console.log(`O poder é ${superPoder1.nome} e a categoria do poder é ${superPod
 
 console.log(`O super poder é ${superPoder1.nome} para ${superheroi.nome}`)
 
-// Aqui me lascou muito. 
 const confrontos = new Confronto();
 console.log(`${confrontos.lutar}`)
 
